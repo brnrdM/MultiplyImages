@@ -14,6 +14,9 @@ def combineImages():
     images[len(images)-1].save(glbl_folder + os.path.sep + "OUTPUT.png","PNG")
 
 if __name__ == '__main__':
+    # Dear User, please create a folder "imagesz" right next to where your python file is located.
+    # You will put your input files in there. 
+    # After running this program you can also find OUTPUT.png in there as well.
     glbl_folder = "imagesz"
     if os.path.isdir(glbl_folder):
         combineImages()
